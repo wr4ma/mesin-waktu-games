@@ -4,7 +4,7 @@ import PlayView from '@/views/PlayView.vue'
 import PlatformView from '@/views/PlatformView.vue'
 
 const router = createRouter({
-  history: createWebHistory('/Mesin-Waktu-Games'),
+  history: createWebHistory('/mesin-waktu-games'),
   routes: [
     {
       path: '/',

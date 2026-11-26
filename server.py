@@ -11,7 +11,7 @@ app = FastAPI(title="FE Games Emulator Server")
 BASE_DIR = Path(__file__).parent / "dist"
 
 # Mount static file directories
-app.mount("/Mesin-Waktu-Games/assets", StaticFiles(directory=BASE_DIR / "assets"), name="assets")
+app.mount("/mesin-waktu-games/assets", StaticFiles(directory=BASE_DIR / "assets"), name="assets")
 # app.mount("/", StaticFiles(directory=BASE_DIR), name="roms")
 
 
@@ -20,8 +20,8 @@ async def health_check():
     """Health check endpoint"""
     return {"status": "healthy", "message": "FE Games server is running"}
 
-# "/Mesin-Waktu-Games/{path:path}"
-@app.get("/Mesin-Waktu-Games/{path:path}", response_class=HTMLResponse)
+# "/mesin-waktu-games/{path:path}"
+@app.get("/mesin-waktu-games/{path:path}", response_class=HTMLResponse)
 async def read_root(path: str):
     """Serve the main index.html file for client-side routing"""
     # If the path has a file extension, try to serve it as a static file

@@ -52,7 +52,7 @@ const loadKeymaps = async () => {
   if (keymapsData) return keymapsData
   
   try {
-    const baseURL = import.meta.env.BASE_URL || '/Mesin-Waktu-Games/'
+    const baseURL = import.meta.env.BASE_URL || '/mesin-waktu-games/'
     const response = await fetch(`${baseURL}data/keymaps.json`)
     
     if (response.ok) {

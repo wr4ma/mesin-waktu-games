@@ -58,7 +58,7 @@ export const useGameStore = defineStore('game', {
       
       this.isLoadingGames = true
       try {
-        const baseURL = import.meta.env.BASE_URL || '/Mesin-Waktu-Games/'
+        const baseURL = import.meta.env.BASE_URL || '/mesin-waktu-games/'
         const response = await fetch(`${baseURL}data/games.json`)
         const games = await response.json()
         this.games = games

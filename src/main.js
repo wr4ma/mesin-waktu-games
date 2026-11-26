@@ -5,7 +5,7 @@ import router from './router'
 
 // Set global window variables
 window.EJS_AdSize = ["800px", "500px"]
-window.baseURL = '/Mesin-Waktu-Games'
+window.baseURL = '/mesin-waktu-games'
 window.emulatorJSPath = 'libraries/emulatorjs/4.2.3'
 
 const app = createApp(App)
