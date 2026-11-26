@@ -1,0 +1,12 @@
+**/__pycache__
+.idea
+.vscode
+.venv
+**/.DS_Store
+**/node_modules
+**/dist
+**/*.zip
+**/temp/
+
+# update.zip di root harus ikut ter-push agar workflow auto-update jalan
+!/update.zip

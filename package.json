@@ -1,0 +1,21 @@
+{
+  "name": "retro-gaming",
+  "version": "1.0.0",
+  "description": "Vue.js EmulatorJS Retro Gaming Platform",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "python server.py"
+  },
+  "dependencies": {
+    "pinia": "^2.1.7",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.3.4",
+    "vite": "^4.4.9"
+  }
+}
